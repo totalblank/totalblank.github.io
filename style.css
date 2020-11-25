@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  color: aqua;
+  font-size: 20px;
+}
+
+p {
+  color: gray;
+  font-size: 16px;
+}
