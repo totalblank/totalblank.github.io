@@ -9,11 +9,17 @@ body {
 }
 
 h1 {
+  height: 40px;
+  width: auto;
+  padding: 10px;
   color: aqua;
   font-size: 20px;
 }
 
 p {
+  height: 10px;
+  width: auto;
+  padding: 5px;
   color: gray;
   font-size: 16px;
 }
