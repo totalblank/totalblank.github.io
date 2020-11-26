@@ -1,0 +1,95 @@
+
+/* to make the styling easier I applied these rule */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  /* font */
+  font-family: "Karla", sans-serif;
+
+  /* setting the height and width of the main container */
+  height: 500px;
+  width: 666px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+
+  /* positioning the container div in the middle of the page */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* grid layout */
+  display: grid;
+  grid-template-columns: repeat(2, 333px);
+  grid-template-rows: repeat(2, 250px);
+}
+
+.header {
+  grid-column: span 2;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.header h1 {
+  color:hsl(179, 62%, 43%);
+  padding-top: 10px;
+}
+.header h2 {
+  color: hsl(71, 73%, 54%);
+  line-height: 40px;
+}
+.header p{
+  line-height: 25px;
+  padding-top: 10px;
+  color: gray;
+}
+
+/* styles for left div */
+.left {
+  color: rgb(240, 240, 240);
+  padding: 35px 0 0 30px;
+  background-color: hsl(179, 71%, 37%);
+}
+.left span {
+  font-size: 30px;
+}
+.left .second{
+  line-height: 30px;
+}
+
+/* styles for right div */
+.right {
+  color: rgb(240, 240, 240);
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.right p {
+  line-height: 28px;
+}
+
+/* styles for button */
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+
+}
+
+.button {
+  height: 50px;
+  width: 240px;
+  text-align: center;
+  padding: auto 0 auto 0;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  box-shadow: 2px 4px 10px 5px rgba(36, 36, 36, 0.2);
+}
