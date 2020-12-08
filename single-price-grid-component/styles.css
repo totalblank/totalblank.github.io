@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Generic Styles */
 html {
   font-size: 16px;
   font-family: 'Carla', sans-serif
@@ -30,31 +31,6 @@ a {
 
 
 /* styles for the whole box */
-/* for mobile */
-@media only screen and (max-width: 375px) {
-  .container {
-    /* dimensioning the container */
-    height: 90%;
-    width: 90%;
-    border-radius: 10px;
-    
-    /* positioning the container in the middle */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-  
-    /* color */
-    background-color: #fff;
-  
-    /* shadow */
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(10,74,73,0.3);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(10,74,73,0.3);
-    box-shadow: 0px 0px 20px 0px rgba(10,74,73,0.3);
-  }
-  
-}
-
 .container {
   /* dimensioning the container */
   height: 65vh;
@@ -86,13 +62,6 @@ a {
   grid-column: span 2;
   padding-left: 30px;
   padding-top: 30px;
-}
-
-@media only screen and (max-width: 375px) {
-  .top {
-    padding-left: 30px;
-    padding-top: 30px;
-  }
 }
 
 .top > h1 {
