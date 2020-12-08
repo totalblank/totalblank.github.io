@@ -1,25 +1,42 @@
-
-/* to make the styling easier I applied these rule */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: hsl(204, 43%, 93%);
+html {
+  font-size: 16px;
+  font-family: 'Carla', sans-serif
 }
 
+body {
+  background-color: #E6EFF6;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+/* styles for the whole box */
 .container {
-  /* font */
-  font-family: "Karla", sans-serif;
-
-  /* setting the height and width of the main container */
-  height: 500px;
-  width: 666px;
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
-
-  /* positioning the container div in the middle of the page */
+  /* dimensioning the container */
+  height: 65vh;
+  width: 52vw;
+  border-radius: 10px;
+  
+  /* positioning the container in the middle */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,69 +44,93 @@ body {
 
   /* grid layout */
   display: grid;
-  grid-template-columns: repeat(2, 333px);
-  grid-template-rows: repeat(2, 250px);
-}
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 47% 53%;
 
-.header {
-  grid-column: span 2;
-  padding: 30px;
+  /* color */
   background-color: #fff;
+
+  /* shadow */
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(10,74,73,0.3);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(10,74,73,0.3);
+  box-shadow: 0px 0px 20px 0px rgba(10,74,73,0.3);
 }
 
-.header h1 {
-  color:hsl(179, 62%, 43%);
-  padding-top: 10px;
+/* Top section */
+.top {
+  grid-column: span 2;
+  padding-left: 30px;
+  padding-top: 30px;
 }
-.header h2 {
-  color: hsl(71, 73%, 54%);
-  line-height: 40px;
+
+.top > h1 {
+  color: #2BB3B1;
+  padding: 0 0 20px 0;
 }
-.header p{
+
+.top > h2 {
+  color: #BFDF32;
+  padding: 0 0 15px 0;
+}
+
+.top > p {
+  color: hsl(0, 0%, 33%);
   line-height: 25px;
-  padding-top: 10px;
-  color: gray;
+  width: 80%;
 }
+/* Top complete */
 
-/* styles for left div */
+/* Left section */
 .left {
-  color: rgb(240, 240, 240);
-  padding: 35px 0 0 30px;
-  background-color: hsl(179, 71%, 37%);
-}
-.left span {
-  font-size: 30px;
-}
-.left .second{
-  line-height: 30px;
+  background-color: #2BB3B1;
+  border-radius: 0 0 0 10px;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
-/* styles for right div */
-.right {
-  color: rgb(240, 240, 240);
-  padding: 30px;
-  background-color: hsl(179, 62%, 43%);
+.left > h2 {
+  color: #fff;
+  padding-bottom: 20px;
 }
 
-.right p {
-  line-height: 28px;
+.twentyNine{
+  font-size: 2rem;
+  padding: 0 10px 0 0;
+  color: #fff;
 }
 
-/* styles for button */
-a,
-a:visited {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
+.rest {
+  display: inline-block;
+  height: 16px;
+  width: 80px;
 
+  position: relative;
+  top: -6px;
+
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.button {
-  height: 50px;
-  width: 240px;
-  text-align: center;
-  padding: auto 0 auto 0;
-  background-color: hsl(71, 73%, 54%);
+.left > p:nth-child(3) {
+  padding: 10px 0 20px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.left > button {
+  height: 23%;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #BFDF32;
   border: none;
-  box-shadow: 2px 4px 10px 5px rgba(36, 36, 36, 0.2);
+
+  -webkit-box-shadow: 0px 5px 5px 1px rgba(46,74,117,0.3);
+  -moz-box-shadow: 0px 5px 5px 1px rgba(46,74,117,0.3);
+  box-shadow: 0px 5px 5px 1px rgba(46,74,117,0.3);
+}
+
+/* Right section */
+.right {
+  background-color: #4ABEBD;
+  border-radius: 0 0 10px 0;
+  padding-left: 30px;
+  padding-top: 30px;
 }
