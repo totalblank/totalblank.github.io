@@ -45,7 +45,7 @@ p {
 }
 
 header p {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -70,6 +70,7 @@ header p {
 .card h2,
 .card p {
   padding-left: 20px;
+  margin: 0 0;
 }
 
 .supervisor {
@@ -114,7 +115,7 @@ embed {
 /*******************************************************
     Mobile Design
 *******************************************************/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 415px) {
   h1 {
     font-size: 1.25rem;
   }
@@ -123,8 +124,14 @@ embed {
   }
   p {
     font-size: 0.75rem;
-    width: 70%;
     margin: 0 auto;
+  }
+  header p {
+    width: 400px;
+  }
+
+  .card p {
+    padding-left: 20px;
   }
 }
 
