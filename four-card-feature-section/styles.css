@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*******************************************************
+    This is a mobile first approach
+*******************************************************/
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h2:first-child {
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+/*******************************************************
+    Design common to both mobile and desktop
+*******************************************************/
+.card {
+  height: 200px;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background: hsl(130, 0%, 98%);
+  position: relative;
+  text-align: left;
+
+  -webkit-box-shadow: 0px 10px 27px -12px rgba(48,126,150,0.56);
+  -moz-box-shadow: 0px 10px 27px -12px rgba(48,126,150,0.56);
+  box-shadow: 0px 10px 27px -12px rgba(48,126,150,0.56);
+}
+
+.card h2,
+.card p {
+  padding-left: 20px;
+}
+
+.supervisor {
+  margin-top: 50px;
+}
+
+.cyan {
+  height: 5px;
+  width: 100%;
+  background-color:hsl(180, 62%, 55%);
+  border-radius: 5px 5px 0 0;
+}
+
+.red {
+  height: 5px;
+  width: 100%;
+  background-color: hsl(0, 78%, 62%);
+  border-radius: 5px 5px 0 0;
+}
+
+.orange {
+  height: 5px;
+  width: 100%;
+  background-color: hsl(34, 97%, 64%);
+  border-radius: 5px 5px 0 0;
+}
+
+.blue {
+  height: 5px;
+  width: 100%;
+  background-color: hsl(212, 86%, 64%);
+  border-radius: 5px 5px 0 0;
+}
+
+embed {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
+
+
+/*******************************************************
+    Mobile Design
+*******************************************************/
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.75rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
