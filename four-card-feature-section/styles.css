@@ -147,7 +147,7 @@ embed {
     font-size: 0.75rem;
     margin: 0 auto;
   }
-  header p {
+  .header-p {
     width: 300px;
   }
 
